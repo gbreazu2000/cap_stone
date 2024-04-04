@@ -47,10 +47,10 @@ Encouraged by these findings, I proceeded to fine-tune the hyperparameters of th
 
 For hyperparameter fine-tuning, I used the following parameters to increase the accuracy of the model:
 
-max_depth: None
-min_samples_leaf: 1
-min_samples_split: 2
-n_estimators: 500
+max_depth: None,
+min_samples_leaf: 1,
+min_samples_split: 2,
+n_estimators: 500,
 
 Unfortunately, the hyperparameter fine-tuning only managed to increase the model's accuracy by 1% (from 88% to 89%).
 
