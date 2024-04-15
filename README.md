@@ -1,24 +1,24 @@
 # Unveiling the Next Tennis Superstars with Machine Leaning
 
-My Motivation?
+### My Motivation?
 
 As a passionate tennis enthusiast, I've long been intrigued by the factors that contribute to a player's success on the court. 
 I've often pondered whether there are discernible characteristics or early career indicators that hint at a player's potential 
 to become a tennis superstar. This innate curiosity propelled me into the realm of tennis analytics, where I sought to unravel 
 the mysteries of identifying promising young talents destined for greatness on the court. 
 
-Purpose & Objectives?
+### Purpose & Objectives?
 
 In this project, I aimed to simulate the role of a data scientist for an up-and-coming sportswear brand. The core objective was to determine
 the predictive potential of a tennis player's success based on the statistics surrounding their first 50 games of their professional career.
 
-Data Source?
+### Data Source?
 
 I obtained my dataset from Kaggle (https://www.kaggle.com/datasets/guillemservera/tennis) containing all of the men's professional tennis
 in the ATP (Association of Tennis Professionals). In my project, I only incorporated the matches starting from the year 2000, since all 
 of the matches from the 20th century had insufficient data for proper analysis.
 
-Data Preprocessing?
+### Data Preprocessing?
 
 The dataset presented a challenging format, with each row representing a unique match. Within each row, statistical information for the 
 winner and loser was stored in separate columns, necessitating a dissection of the dataset. To facilitate ease of use, I created player-specific 
@@ -37,7 +37,7 @@ transform categorical variables such as players' hand preferences into numerical
 column that gauged the value of a win based on the opponent's ranking, employing a fractional system to accurately reflect the competitiveness
 of each match. These strategies enriched the dataset with valuable insights, enabling more robust analyses and model training.
 
-Modeling?
+### Modeling?
 
 For modeling, I employed binary classification models to forecast the likelihood of tennis players entering the top 25
 rankings. Specifically, I explored the efficacy of logistic regression, random forest classification, and XGBoost algorithms in capturing underlying
@@ -54,7 +54,7 @@ n_estimators: 500,
 
 Unfortunately, the hyperparameter fine-tuning only managed to increase the model's accuracy by 1% (from 88% to 89%).
 
-Conclusive thoughts?
+### Conclusive thoughts?
 
 In conclusion, while the model demonstrated high accuracy in predicting players who would not reach the top 25 rankings, it performed poorly in 
 identifying those who would actually achieve this milestone, as evidenced by low precision and recall values. This discrepancy can be attributed 
